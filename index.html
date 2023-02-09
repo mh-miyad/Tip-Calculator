@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Tip Calculator</title>
+</head>
+<body class="">
+<header>
+    <div class="text-center text-4xl p-5 container mx-auto "> Tip calculator</div>
+</header>
+<main class="flex justify-center gap-10 flex-col lg:flex-row">
+    <section class="my-10 ">
+        <div class="container mx-auto flex justify-center ">
+            <div class="border-2 border-gray-800 p-5 rounded-2xl shadow-2xl shadow-indigo-100">
+                <div
+                class="text-center">
+                    <div><h2 class=" text-xl font-semibold p-4 text-indigo-900"> Enter Your bill </h2>
+                        <input type="number" class="px-5 py-4 bg-indigo-100 rounded-full" id="net-bill"></div>
+                      </div>
+                        <div>
+                            <p class="capitalize text-xl font-semibold p-4 text-indigo-900">Number Of People</p>
+                            <input type="number" class="px-5 py-4 bg-indigo-100 rounded-full" id="per-person">
+                            <p class="capitalize text-xl font-semibold p-4 text-indigo-900 text-center">Tip %</p>
+                            <input type="number" class="px-5 py-4 bg-indigo-100 rounded-full text-center" id="tip-amout" value="15" min="0">
+                        </div>
+                        <button class="bg-indigo-500 px-7 py-3 text-white rounded-full hover:bg-indigo-600 mx-16 my-10 shadow-2xl shadow-indigo-800 hover:ring-2 ring-indigo-600 font-bold " id="btn-calculate">Calculate</button>
+            
+            </div>
+            </div>
+       
+    </section>
+    <section class="my-5 md:my-20 mx-10 ">
+        <div class="container mx-auto flex justify-center">
+            <div class="border-2 border-gray-800 p-10 rounded-2xl shadow-2xl shadow-indigo-100 ">
+                <div
+                class="text-center">
+                    <div><h2 class=" text-xl font-semibold p-4 text-indigo-900">Tip Per Person</h2>
+                   
+                        <input type="number" readonly class=" md:text-2xl text-center px-5 py-4 bg-indigo-100 rounded-full"  id="total-tip-result"></div>
+                        <p class="capitalize text-xl font-semibold p-4 text-indigo-900">total bill</p>
+                        <input type="number"readonly class="px-5 py-4 bg-indigo-100 rounded-full text-center md:text-2xl " id="total-bill">
+                    </div>
+                        <div>
+
+                        </div>
+            
+            </div>
+            </div>
+        </div>
+    </section>
+   </div>
+</main>
+
+<!--  javaScript  -->
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
